@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 150 20% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 20% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 20% 4%;
+    --primary: 40 60% 53%;
+    --primary-foreground: 150 20% 4%;
+    --secondary: 150 10% 9%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 150 5% 20%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 40 60% 53%;
+    --accent-foreground: 150 20% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 10% 15%;
+    --input: 150 10% 15%;
+    --ring: 40 60% 53%;
+    --radius: 0.5rem;
+
+    /* Custom colors */
+    --color-night: #080C0A;
+    --color-charcoal: #151B18;
+    --color-white: #F4F4F4;
+    --color-grey: #9A9A9A;
+    --color-gold: #D4A03D;
+    --color-green: #6D8A6B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--color-night);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marcellus', serif;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer utilities {
+  .font-marcellus {
+    font-family: 'Marcellus', serif;
+  }
+
+  .font-jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .text-night {
+    color: var(--color-night);
+  }
+
+  .text-charcoal {
+    color: var(--color-charcoal);
+  }
+
+  .text-white-custom {
+    color: var(--color-white);
+  }
+
+  .text-grey {
+    color: var(--color-grey);
+  }
+
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .text-green {
+    color: var(--color-green);
+  }
+
+  .bg-night {
+    background-color: var(--color-night);
+  }
+
+  .bg-charcoal {
+    background-color: var(--color-charcoal);
+  }
+
+  .bg-white-custom {
+    background-color: var(--color-white);
+  }
+
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+
+  .bg-green {
+    background-color: var(--color-green);
+  }
+
+  .border-gold {
+    border-color: var(--color-gold);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
