@@ -31,6 +31,7 @@ export function HeroSection() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        opacity: 0.85,
       }}>
         <div className="max-w-[720px]">
           <motion.p
@@ -39,14 +40,14 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-jakarta text-[13px] font-semibold uppercase tracking-[2px] text-gold mb-6 hidden md:block"
           >
-            THE BACK ROOM — TAMPERE
+            KIROPRAKTIKOT TURUSSA JA JYVÄSKYLÄSSÄ
           </motion.p>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-marcellus text-[30px] md:text-[40px] font-semibold text-white leading-[1.2] max-w-[600px] mb-5 md:mb-6"
+            className="font-marcellus text-[30px] md:text-[40px] font-bold text-white leading-[1.2] max-w-[600px] mb-5 md:mb-6"
           >
             Kivuttomampaa ja
             <br />
