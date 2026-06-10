@@ -26,7 +26,12 @@ export function HeroSection() {
       <div className="md:hidden absolute inset-0 backdrop-blur-[1.5px]" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-[10%] pt-14 md:pt-20">
+      <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-[10%] pt-14 md:pt-20" style={{
+        backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Fed3a554350ee4f0a86d9f71240cc066c%2F97007d285e1f40c68dca9c653054c139?format=webp)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}>
         <div className="max-w-[720px]">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
