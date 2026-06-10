@@ -48,6 +48,7 @@ export function Navigation() {
               style={{
                 filter: isScrolled ? 'none' : 'brightness(0) invert(1)',
                 transition: 'height 500ms ease-in-out, filter 400ms ease-in-out',
+                objectFit: 'scale-down',
               }}
             />
           </Link>
